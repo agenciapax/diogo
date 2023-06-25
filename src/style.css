@@ -1,0 +1,218 @@
+body{
+    background-color: white;
+}
+
+header .col-4 {
+    margin-top: 1rem;
+    background-color: white;
+    height: 120px;
+}
+
+.logobg{
+    
+    width: 100%;
+    height:100px;
+    z-index: 1;
+    background-image: url(img/logo.png); 
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.saldo{
+    width: 60%;
+    background-color: greenyellow;
+    box-shadow: rgb(113, 185, 6) 0px 0px 30px;
+    padding: 1rem;
+    margin: 0.5rem;
+}
+
+.saldo:hover{
+    background-color: rgb(152, 245, 13);
+    box-shadow: rgb(56, 240, 0) 0px 0px 30px;
+    padding: 1rem;
+    margin: 0.5rem;
+}
+
+.btnpesquisa{
+    width: 20%;
+    background-color: rgb(133, 221, 0);
+    box-shadow: rgb(113, 185, 6) 0px 0px 30px;
+    padding: 1rem;
+    margin: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.btnpesquisa:hover{
+    width: 20%;
+    background-color: rgb(107, 179, 0);
+    box-shadow: rgb(100, 167, 0) 0px 0px 30px;
+    padding: 1rem;
+    margin: 0.5rem;
+
+}
+
+
+.valor{
+    font-size: 2rem;margin-top: -10px !important;float: right;
+}
+
+.bg{
+    background-color: #f2f2f2;
+    padding-top: 2rem;
+  
+    height: 100vh;
+}
+
+.info-home{
+    border-radius: 10px;
+    text-align: center;
+    padding: 1.5rem;
+    margin: 1rem;
+    box-shadow: rgb(150, 150, 150) 0px 0px 30px;
+    background-color:white;
+}
+
+.info-home p {
+    font-size: 1.2rem;
+}
+
+.img-home{
+    border-radius: 10px;
+    text-align: center;
+    padding: 1.5rem;
+    margin: 1rem;
+    background-color:transparent;
+}
+
+.img-home img{
+    border-radius: 10px;
+    text-align: center;
+    margin: 1rem;
+    max-width: 375px;
+    border: solid 5px aliceblue;
+}
+
+.nt1{
+    background-color: red;
+    font-weight: bold;
+    font-size: 1.2rem;
+    box-shadow: red 0px 0px 15px;
+    color: aliceblue;
+    margin: 0.5rem;
+}
+
+.nt2{
+    background-color: rgb(255, 115, 0);
+    font-weight: bold;
+    font-size: 1.2rem;
+    box-shadow: rgb(255, 115, 0) 0px 0px 15px;
+    color: aliceblue;
+    margin: 0.5rem;
+}
+
+.nt3{
+    background-color: rgb(255, 187, 0);
+    font-weight: bold;
+    font-size: 1.2rem;
+    box-shadow: rgb(255, 187, 0) 0px 0px 15px;
+    color: aliceblue;
+    margin: 0.5rem;
+}
+.nt4{
+    background-color: rgba(160, 204, 0, 0.89);
+    font-weight: bold;
+    font-size: 1.2rem;
+    box-shadow: rgba(160, 204, 0, 0.89) 0px 0px 15px;
+    color: aliceblue;
+    margin: 0.5rem;
+}
+
+.nt5{
+    background-color: rgba(0, 161, 27, 0.959);
+    font-weight: bold;
+    font-size: 1.2rem;
+    box-shadow: rgba(0, 161, 27, 0.959) 0px 0px 15px;
+    color: aliceblue;
+    margin: 0.5rem;
+}
+
+.btnvideo{
+    background-color: blueviolet;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: aliceblue;
+    padding: 1rem;
+    box-shadow: rgba(170, 0, 192, 0.959) 0px 5px 30px;
+}
+
+.btnvideo:hover{
+    background-color: rgb(64, 2, 80);
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: white;
+    padding: 1rem;
+    box-shadow: rgba(170, 0, 192, 0.959) 0px 5px 30px;
+}
+
+#saldo{
+    font-size: 3rem;
+}
+
+@media (max-width: 420px)
+{
+
+    .menutop{
+        width: 35%;
+    }
+
+
+    .logotop{
+        width: 60%;
+        padding: 1rem;
+    }
+
+    .saldo{
+        padding: 0;
+        font-size: 1rem;
+        
+        margin-bottom: 1rem !important;
+        height: 50px !important;
+    }
+    .valor{
+        margin-top: 0px !important;
+        font-size: 1rem;
+        float: none;
+    }
+
+    .img-home img {
+        width: 265px;
+    }
+
+    .btnpesquisa{
+        width: 180px;
+        font-size: 1rem;
+    }
+
+    .btnpesquisa:hover{
+        width: 180px;
+        font-size: 1rem;
+    }
+
+    .info-home h1,h3 {
+        font-size: 1.2rem;
+    }
+
+    .info-home p {
+        font-size: 1rem;
+    }
+
+    .btn{
+        --bs-btn-padding-x: 0.65rem;
+    }
+
+    .pix{
+        font-size: 0.9rem !important;
+    }
+
+}

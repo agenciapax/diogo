@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avalie Roupas e ganhe dinheiro!</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="../src/style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+     <header class="container-md-12 container-sm-fluid text-center">
+        <div class="row ">
+            <div class="col-sm-2 col-md-2 menutop"><svg style="margin-top:20px ;" xmlns="http://www.w3.org/2000/svg" height="3em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></div>
+            <div class="col-sm-10 col-md-5 logotop"> 
+               <div class="logobg"></div>
+        </div>
+     </header>
+
+     <div class="container-fluid  text-center">
+       <div class="container-md ">
+        <div class="row">
+            <div class="col-12 ">
+                <br><br><br>
+                <h1 style="color: blueviolet;" >Parabéns!!!</h1>
+                <h2>Seu novo saldo é: <div id="saldo"></div></h2>
+                <p class="pix" style="font-size:1.5rem ;" >Para cadastrar sua chave pix e realizar seu saque, <br> 
+                    assista um <b style="color: blueviolet;">vídeo de 4 minutos!</b></p>
+                    <br>
+                    <a href="#" class="btn btnvideo"> Assistir vídeo</a>
+                    <div id="saldo"></div>
+
+                    <script>
+                      let saldoElement = document.getElementById("saldo");
+                
+                      function exibirSaldo(saldo) {
+                        saldoElement.innerHTML =  "<b>R$: " + saldo + ",00</b>";
+                
+                        if (saldo < 200) {
+                          setTimeout(function() {
+                            exibirSaldo(saldo + 1);
+                          }, 25); 
+                        }
+                      }
+                
+                      exibirSaldo(1);
+                    </script>
+
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
